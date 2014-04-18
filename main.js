@@ -1,6 +1,7 @@
 var canvas=document.getElementById("canvas"),
 	context=canvas.getContext("2d"),
-	posX,posY;
+	posX,
+	posY;
 function findPos(){
 	posX=e.pageX-this.offsetLeft;
 	posY=e.pageY-this.offsetTop;
