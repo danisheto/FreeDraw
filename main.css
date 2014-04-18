@@ -1,0 +1,9 @@
+html{
+	-webkit-user-select:none;
+}
+body{
+	background-color:#EFEFEF;
+}
+canvas{
+	background-color:#FFFFFF;
+}
