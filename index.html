@@ -12,10 +12,17 @@
 	<div id="webpage">
 		<ul>
 			<li id="smallcolorpicker">
-				<a class="tools" id="smallColor" href="javascript:void(0)"><img id="smallColorImg" src="colorpicker.png"></a>
+				<a class="tools" id="smallColor" href="javascript:void(0)"><img id="smallColorImg" class="colorpicker" src="colorpicker.png"></a>
 			</li>
 			<li id="strokeWidth"></li>
-			<li id="colopickerLarge"></li>
+			<li id="colorpickerLarge">
+				<div>
+					<img src="colorpicker.png" class="colorpicker">
+					<aside id="colorpickerExtra">
+						<button>Done</button>
+					</aside>
+				</div>
+			</li>
 		</ul>
 		<canvas id="canvas"></canvas>
 	</div>
