@@ -1,9 +1,43 @@
 html{
 	-webkit-user-select:none;
 }
-body{
-	background-color:#EFEFEF;
-}
 canvas{
 	background-color:#FFFFFF;
+	border:solid 2px black;
+}
+ul li{
+	list-style:none;
+	display:inline-block;
+}
+.tools{
+	display:block;
+	background-color:#FFFFFF;
+	padding:4px;
+	border:solid 1px #BABABA;
+	border-bottom-width:2px;
+	border-radius:3px;
+	height:16px;
+	width:16px;
+}
+.tools:hover{
+	border-color:#999999;
+}
+.tools:active{
+	margin-top:1px;
+	border-bottom-width:1px;
+}
+#smallColor{
+	
+}
+#smallColorImg{
+	width:16px;
+	height:16px;
+	background-color:#FF0000;
+}
+#smallColorExtra{
+	display:none;
+	border:solid 2px black;
+}
+#smallColorDone{
+	margin:auto;
 }
