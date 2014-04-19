@@ -49,6 +49,20 @@ canvas{
 	position:relative;
 	bottom:4px;
 }
+#colorpicker{
+	height:100%;
+	display:inline-block;
+}
+#SatBriSpan{
+	height:100%;
+	display:inline-block;
+}
+#SatBriSpan{
+	display:inline-block;
+}
+#SatBri{
+	/*height:100%;*/
+}
 #smallColorDone{
 	margin:auto;
 }
@@ -61,4 +75,20 @@ canvas{
 	padding:10px;
 	border:solid 2px black;
 	background-color:white;
+}
+#hue{
+	display:inline-block;
+}
+#hue img:last-of-type, #hue img:first-of-type, #selectedColor{
+	position:relative;
+}
+#hue img:last-of-type{
+	-webkit-transform:scale(-1);
+	right:4px;
+}
+#hue img:first-of-type{
+	left:4px;
+}
+#selectedColor{
+	right:15px;
 }

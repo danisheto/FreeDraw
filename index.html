@@ -17,10 +17,28 @@
 			<li id="strokeWidth"></li>
 			<li id="colorpickerLarge">
 				<div>
-					<img src="colorpicker.png" class="colorpicker">
-					<aside id="colorpickerExtra">
+					<section id="colorpicker">
+						<section id="SatBriSpan">
+							<img draggable="false" id="SatBri" src="colorpicker.png" class="colorpicker">
+							<img draggable="false" src="circle-selected-black.gif" id="selectedColor">
+						</section>
+						<section id="hue">
+							<img draggable="false" class="arrow" src="arrow.gif">
+							<img draggable="false" id="hueBar" src="hueBar.png">
+							<img draggable="false" class="arrow" src="arrow.gif">
+						</section>
+					</section>
+					<section id="colorpickerExtra">
+						<div id="color"></div>
+						<table>
+							<tbody>
+								<tr><td>Hue:</td><td><input class="colorPickerInput"></td></tr>
+								<tr><td>Saturation:</td><td><input class="colorPickerInput"></td></tr>
+								<tr><td>Brightness:</td><td><input class="colorPickerInput"></td></tr>
+							</tbody>
+						</table>
 						<button>Done</button>
-					</aside>
+					</section>
 				</div>
 			</li>
 		</ul>
