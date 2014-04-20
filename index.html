@@ -12,32 +12,32 @@
 	<div id="webpage">
 		<ul>
 			<li id="smallcolorpicker">
-				<a class="tools" id="smallColor" href="javascript:void(0)"><img id="smallColorImg" class="colorpicker" src="http://colorpicker.com/images/color-codes/bgGradient.png"></a>
+				<a class="tools" id="smallColor" href="javascript:void(0)"><img id="smallColorImg" class="colorpicker" src="colorpicker.png"></a>
 			</li>
 			<li id="strokeWidth"></li>
 			<li id="colorpickerLarge">
 				<div>
 					<section id="colorpicker">
 						<section id="SatBriSpan">
-							<img draggable="false" id="SatBri" src="http://colorpicker.com/images/color-codes/bgGradient.png" class="colorpicker">
-							<img draggable="false" src="http://www.colorpicker.com/images/color-codes/circle-selected-black.gif" id="selectedColor">
+							<img draggable="false" id="SatBri" src="colorpicker.png" class="colorpicker">
+							<img draggable="false" src="circle-selected-black.gif" id="selectedColor">
 						</section>
-						<section id="hue">
-							<img draggable="false" class="arrow" src="http://www.colorpicker.com/images/color-codes/arrow-l.gif">
-							<img draggable="false" id="hueBar" src="http://www.colorpicker.com/images/color-codes/hueBar.png">
-							<img draggable="false" class="arrow" src="http://www.colorpicker.com/images/color-codes/arrow-l.gif">
+						<section id="hueSection">
+							<img draggable="false" class="arrow" src="arrow.gif">
+							<img draggable="false" id="hueBar" src="hueBar.png">
+							<img draggable="false" class="arrow" src="arrow.gif">
 						</section>
 					</section>
 					<section id="colorpickerExtra">
 						<div id="color"></div>
 						<table>
 							<tbody>
-								<tr><td>Hue:</td><td><input class="colorPickerInput"></td></tr>
-								<tr><td>Saturation:</td><td><input class="colorPickerInput"></td></tr>
-								<tr><td>Brightness:</td><td><input class="colorPickerInput"></td></tr>
+								<tr><td>Hue:</td><td><input class="colorPickerInput" id="hueInput" value="360"></td></tr>
+								<tr><td>Saturation:</td><td><input class="colorPickerInput" id="saturationInput" value="100"></td></tr>
+								<tr><td>Brightness:</td><td><input class="colorPickerInput" id="brightnessInput" value="0"></td></tr>
 							</tbody>
 						</table>
-						<button>Done</button>
+						<button id="doneColorPicker">Done</button>
 					</section>
 				</div>
 			</li>

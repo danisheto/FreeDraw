@@ -76,19 +76,27 @@ canvas{
 	border:solid 2px black;
 	background-color:white;
 }
-#hue{
+#hueBar{
+	-webkit-transform:scale(-1);
+}
+#hueSection{
 	display:inline-block;
 }
-#hue img:last-of-type, #hue img:first-of-type, #selectedColor{
+#hueSection img:last-of-type, #hueSection img:first-of-type, #selectedColor{
 	position:relative;
 }
-#hue img:last-of-type{
+#hueSection img:last-of-type{
 	-webkit-transform:scale(-1);
 	right:4px;
 }
-#hue img:first-of-type{
+#hueSection img:first-of-type{
 	left:4px;
 }
 #selectedColor{
 	right:15px;
+}
+#color{
+	margin:0 auto;
+	height:50px;
+	width:50px;
 }
