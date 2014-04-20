@@ -1,4 +1,4 @@
-var canvas=document.getElementById("canvas"),canvasPosX,canvasPosY,colorPosX,colorPosY,huePos,hueBarX,hue,saturation,brightness,lightness, saturationHSL;
+var canvas=document.getElementById("canvas"),canvasPosX,canvasPosY,colorPosX,colorPosY,huePos,hueBarX,hue,saturation,brightness,lightness, saturationHSL,imgData;
 hue=360;
 saturationHSL=100;
 brightness=0;
@@ -42,6 +42,9 @@ var context=canvas.getContext("2d");
 window.onresize=function(){
 	context.canvas.width=window.innerWidth
 	context.canvas.height=window.innerHeight-52;
+	if(!!imgData){
+		context.putImageData(imgData,0,0)
+	}
 }
 window.onresize.apply();
 //color picker css
@@ -92,4 +95,7 @@ canvas.onmousedown=function(e){
 	}
 	canvas.onmouseup=stopDrawing;
 	canvas.onmouseout=stopDrawing;
+}
+canvas.onclick=function(e){
+	imgData=context.getImageData(0,0,canvas.width,canvas.height);
 }
